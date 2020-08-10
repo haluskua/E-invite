@@ -1,0 +1,370 @@
+// Top Header
+
+// Bread-crumb animation
+
+#project-index {
+  animation: breadCrumb 8s infinite linear alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes breadCrumb {
+  from {
+    transform: rotateZ(-4deg);
+  }
+  to {
+    transform: rotateZ(4deg);
+  }
+}
+
+// ........
+.menu-btn {
+  position: relative;
+  width: 120px;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: -7px;
+  padding: 12px;
+  align-self: center;
+  background: #e6e4cd00;
+  @include transition-ease;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  @include SMALL-LANDSCAPE {
+    width: 19%;
+  }
+  @include MEDIUM-DEVICE-WIDTH {
+    z-index: 9999;
+    cursor: pointer;
+    width: 18%;
+  }
+  @include MEDIUM-LANDSCAPE {
+    width: 12%;
+  }
+  @include LARGE-DEVICE-WIDTH {
+    width: 135px;
+  }
+
+  &__burger {
+    position: relative;
+    top: 0.9rem;
+    width: 31px;
+    height: 3px;
+    background: ($BLACK-002);
+    @include transition-ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      width: 31px;
+      height: 3px;
+      background: ($BLACK-002);
+      @include transition-ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 31px;
+      height: 3px;
+      background: ($BLACK-002);
+      @include transition-ease;
+    }
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        color: #138d1b;
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
+    }
+  }
+  &__logo {
+    color: #ffb443;
+    margin-top: 4px;
+    position: relative;
+    left: -1%;
+    font-size: 1.27em;
+    font-weight: bold;
+    font-family: "Charmonman", serif;
+    @include MEDIUM-DEVICE-WIDTH {
+      font-size: 1.45rem;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.menu-index {
+  padding: 0;
+  @include SMALL-LANDSCAPE {
+    width: 25%;
+  }
+  #project-index {
+    height: auto; 
+    width: 38%;
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    margin-top: -1.15rem;
+    @include SMALL-LANDSCAPE {
+      margin-top: -3rem;
+      width: 30%;
+      font-size: 0.88rem;
+    }
+    @include MEDIUM-DEVICE-WIDTH {
+      top: -1.5rem;
+      width: 30%;
+      right: 7rem;
+    }
+    @include MEDIUM-LANDSCAPE {
+      padding-top: 0;
+      margin-top: -5rem;
+      width: 33%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      top: 1.262rem;
+      width: 18%;
+      right: 0;
+      margin-top: -4.5rem;
+    }
+  }
+  #ps,
+  #pt {
+    font-size: 45px;
+    @include SMALL-LANDSCAPE {
+      font-size: 32px;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  width: 100vw;
+  height: 48px;
+  @include Front-page-bcg;
+  @include box-shadow-nav;
+  @include MEDIUM-DEVICE-WIDTH {
+    height: 65px;
+  }
+
+  &.open {
+    visibility: visible;
+    padding: 0px;
+  }
+
+  .menu-nav {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 2rem;
+    transform: translateY(-100%);
+    background-color: #3e0d18;
+    @include transition-ease;
+    background: ($WHITE);
+
+    &__item:nth-child(3) {
+      transition-delay: 0.315s;
+      display: flex;
+      justify-content: center;
+      @include MEDIUM-DEVICE-WIDTH {
+        height: 80%;
+      }
+    }
+
+    &.open {
+      transform: translateY(0);
+      align-items: flex-end;
+      justify-content: space-around;
+      border: 2px solid #f2f3eb;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 36px;
+      padding-top: 51px;
+      height: 100vh;
+      z-index: 10;
+      @include Front-page-bcg;
+      @include SMALL-LANDSCAPE {
+        flex-direction: row;
+        padding-top: 63px;
+        background-position: bottom;
+      }
+      @include MEDIUM-DEVICE-WIDTH {
+        display: flex;
+        width: 83%;
+        flex-wrap: nowrap;
+        justify-content: center;
+        @include box-shadow-one;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        padding-top: 6rem;
+        flex-direction: column;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        background-position: top;
+      }
+    }
+
+    &__item {
+      transform: translateX(100vw);
+      @include transition-ease;
+      width: auto;
+      @include MEDIUM-DEVICE-WIDTH {
+        display: inline;
+        padding: 0.5rem;
+      }
+
+      &.open {
+        transform: translate(0);
+      }
+    }
+  }
+
+  .my_name {
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 1.59em;
+    font-weight: normal;
+    line-height: 1em;
+    color: ($BLACK-003);
+    letter-spacing: 0em;
+    text-shadow: none;
+    text-align: center;
+    padding: 0;
+    @include SMALL-LANDSCAPE {
+      font-size: 1.35rem;
+      font-weight: bold;
+    }
+    @include MEDIUM-DEVICE-WIDTH {
+      font-size: 2.2em;
+      color: ($GOLD);
+    }
+    @include MEDIUM-LANDSCAPE {
+      font-size: 2.3rem;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      font-size: 2.15em;
+      line-height: 2.96rem;
+      letter-spacing: 0.05rem;
+    }
+  }
+
+  .svg-container {
+    width: 88%;
+    text-align: center;
+    display: flex;
+    margin-top: -1rem;
+    justify-content: space-around;
+    @include SMALL-LANDSCAPE {
+      width: 40%;
+    }
+    @include MEDIUM-DEVICE-WIDTH {
+      width: 80%;
+      padding-top: 0;
+      height: 68vh;
+    }
+    @include MEDIUM-LANDSCAPE {
+      width: 64%;
+    }
+    @include LARGE-DEVICE-WIDTH {
+      width: 65%;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      @include MEDIUM-DEVICE-WIDTH {
+        width: 95%;
+        height: auto;
+      }
+    }
+  }
+  // ........
+  .title_txt_container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .title_text {
+      font-size: 1.3rem;
+      font-family: "Cormorant Unicase", serif;
+      padding: 0;
+      color: ($BLACK-003);
+      @include SMALL-LANDSCAPE {
+        font-size: 1.15em;
+        font-weight: bold;
+      }
+      @include MEDIUM-DEVICE-WIDTH {
+        font-size: 1.8rem;
+        margin: 0;
+        font-weight: normal;
+      }
+      @include LARGE-DEVICE-WIDTH {
+        font-size: 1.6em;
+        font-weight: normal;
+      }
+    }
+  }
+
+  //spinnning logo wheel
+
+  #leters {
+    animation: yellow_ring 4.5s infinite linear alternate-reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes yellow_ring {
+    from {
+      transform: rotateZ(-50deg);
+    }
+    to {
+      transform: rotateZ(25deg);
+    }
+  }
+
+  #semi_red {
+    animation: ring2 8.5s infinite linear alternate-reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  @keyframes ring2 {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  //the speed or motion rate each item gets pushed out to show
+  @for $i from 1 through 5 {
+    .menu-nav__item:nth-child(#{$i}) {
+      transition-delay: ($i * 0.07s) + 0.105s;
+    }
+  }
+}
