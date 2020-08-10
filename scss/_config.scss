@@ -46,10 +46,7 @@
 }
 // ...........
 @mixin Front-page-bcg {
-  background: repeating-linear-gradient(80deg, #ffffff, #e7e8d9fa 4px),
-    url(../img/pattern.jpg) center center;
-  background-size: contain;
-  background-repeat: repeat;
+  background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px);
 }
 // ...........
 @mixin Menu-slider-bcg {
@@ -161,51 +158,3 @@
     @content;
   }
 }
-
-////////////////////////////////////////////////////
-// patials_and mixins not yet introduced
-/*-----X------ partials imports ------X-----*/
-
-/*----------- @Mixins -----------*/
-
-// @mixin flexCenter($direction) {
-//   display: flex;
-//   justify-content: content;
-//   align-items: center;
-//   flex-direction: $direction;
-// }
-
-// @mixin theme($light-theme: true) {
-//   @if $light-theme {
-//     background: lighten($primary-bcg-color, 100%);
-//     color: darken($primary-txt-color, 100%);
-//   }
-// }
-
-// @mixin mobile {
-//   @media (max-width: $mobile) {
-//     @content;
-//   }
-// }
-
-/*----------- Light & Dark Theme -----------*/
-
-// .light {
-//   @include theme($light-theme: false);
-// }
-
-// /*----------- @Mixins -----------*/
-
-// @function weight($weight-name) {
-//   @return map-get($font-weights, $weight-name);
-// }
-
-// .................................................................
-// function FOR AUTO UPDATE OF TEXT COLOR CHANGE with sensitivity to background
-// @function set-text-color($color) {
-//   @if (lightness($color) > 40%) {
-//     @return #000;
-//   } @else {
-//     @return #ffffff;
-//   }
-// }

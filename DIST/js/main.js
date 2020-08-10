@@ -19,34 +19,6 @@ let shield = false;
 let showMenu = false;
 
 
-// togle for shield on landing page
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   shieldCircle.addEventListener("click", toggleShield);
-
-//   function toggleShield(e) {
-//     if (!shield) {
-//       topShield.classList.add("open");
-//       leftShield.classList.add("open");
-//       rightShield.classList.add("open");
-//       bottomShield.classList.add("open");
-
-//       shield = true;
-//     } else {
-//       topShield.classList.remove("open");
-//       leftShield.classList.remove("open");
-//       rightShield.classList.remove("open");
-//       bottomShield.classList.remove("open");
-
-//       shield = false;
-//     }
-//   }
-// });
-
-
-//////////////////////////////////
-
-
 // toggleMenu Hamburger menu
 
 document.addEventListener("DOMContentLoaded", function () {

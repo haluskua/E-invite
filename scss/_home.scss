@@ -7,6 +7,7 @@
   @include MEDIUM-DEVICE-WIDTH {
     height: 93vh;
   }
+
   .home {
     display: flex;
     flex-direction: column;
@@ -89,8 +90,9 @@
         line-height: 1.1em;
         text-align: center;
         font-weight: bold;
+        color: #cbfffa;
         text-transform: lowercase;
-        font-family: "Cinzel Decorative", sans-serif;
+        font-family: "Chilanka", cursive;
         @include SMALL-LANDSCAPE {
           line-height: 2rem;
           font-size: 1.8rem;
@@ -107,7 +109,8 @@
         @include LARGE-DEVICE-WIDTH {
           line-height: 2.1rem;
           margin-top: 1rem;
-          font-size: 2rem;
+          font-size: 1.5rem;
+          letter-spacing: 0.04rem;
         }
         span {
           font-size: 2.1rem;
@@ -116,19 +119,26 @@
         }
       }
       h3::before {
-        content: "Freelance Portfolio";
-        font-size: 1.2rem;
+        content: "Navilli Maladina";
+        font-size: 1.36rem;
         text-align: left;
-        color: #daa520;
+        color: #cbfffa;
+        text-transform: uppercase;
         display: flex;
         padding-bottom: 0.5rem;
         font-weight: normal;
+        letter-spacing: 0.04rem;
         justify-content: center;
         @include MEDIUM-DEVICE-WIDTH {
           font-size: 1.4rem;
         }
         @include MEDIUM-LANDSCAPE {
-          font-size: 1.42rem;
+          font-size: 2.16rem;
+          padding-bottom: 1rem;
+        }
+        @include LARGE-DEVICE-WIDTH {
+          font-size: 1.73rem;
+          letter-spacing: 0.04rem;
         }
       }
       h3::after {
@@ -170,23 +180,25 @@
         background: none;
         justify-content: center;
         padding-bottom: 2rem;
+        margin-top: 5rem;
       }
 
       .svg-container {
         display: flex;
         justify-content: center;
-        @include shield-bcg;
+        // @include shield-bcg;
+
         svg {
           width: 63%;
           height: auto;
           @include SMALL-LANDSCAPE {
-            width: 43%;
+            width: 84%;
           }
           @include MEDIUM-DEVICE-WIDTH {
-            width: 38%;
+            width: 48%;
           }
           @include LARGE-DEVICE-WIDTH {
-            width: 30%;
+            width: 90%;
           }
         }
       }

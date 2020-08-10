@@ -112,7 +112,7 @@
     width: 25%;
   }
   #project-index {
-    height: auto; 
+    height: auto;
     width: 38%;
     z-index: 999;
     position: fixed;
@@ -367,4 +367,31 @@
       transition-delay: ($i * 0.07s) + 0.105s;
     }
   }
+}
+
+// Baloons
+
+.top-baloons {
+  @include LARGE-DEVICE-WIDTH {
+    width: 100%;
+    padding: 0.3rem;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+  }
+}
+
+#baloons2 {
+  height: 100%;
+}
+
+.point {
+  @include LARGE-DEVICE-WIDTH {
+    color: rgb(223, 119, 119);
+    font-size: 2.1rem;
+  }
+}
+
+#desktop {
+  z-index: 99999999;
 }
