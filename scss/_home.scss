@@ -17,14 +17,11 @@
     padding-top: 2rem;
     @include Front-page-bcg;
     @include SMALL-LANDSCAPE {
-      padding: 0 8%;
       padding: 28px 5.5%;
       padding-bottom: 0;
       @include Front-page-bcg;
     }
-    @include MEDIUM-LANDSCAPE {
-      padding: 0 16%;
-    }
+
     p {
       font-size: 0.98rem;
       background: none;
@@ -198,7 +195,7 @@
             width: 48%;
           }
           @include LARGE-DEVICE-WIDTH {
-            width: 90%;
+            width: 66%;
           }
         }
       }
@@ -252,6 +249,31 @@
         margin: 1rem 0;
         font-size: 1.2rem;
       }
+    }
+  }
+}
+
+///Aside
+.back-slider {
+  @include LARGE-DEVICE-WIDTH {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+  }
+  .side {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    height: 93%;
+    margin-right: -3.4rem;
+    position: relative;
+    padding: 0.6rem;
+    align-items: center;
+    svg {
     }
   }
 }

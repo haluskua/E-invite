@@ -17,13 +17,9 @@
   background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .home {
-      padding: 0 8%;
       padding: 28px 5.5%;
       padding-bottom: 0;
       background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); } }
-  @media only screen and (min-width: 1024px) and (orientation: landscape) {
-    .content-wrapper .home {
-      padding: 0 16%; } }
   .content-wrapper .home p {
     font-size: 0.98rem;
     background: none; }
@@ -173,7 +169,7 @@
             width: 48%; } }
         @media only screen and (min-width: 1025px) and (orientation: landscape) {
           .content-wrapper .home__box-three .svg-container svg {
-            width: 90%; } }
+            width: 66%; } }
     .content-wrapper .home__box-three .occ-title {
       color: #292b20;
       font-size: 1.75rem;
@@ -216,6 +212,26 @@
     .content-wrapper .home .projects__item5 h3 {
       margin: 1rem 0;
       font-size: 1.2rem; }
+
+@media only screen and (min-width: 1025px) and (orientation: landscape) {
+  .back-slider {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0; } }
+
+.back-slider .side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  height: 93%;
+  margin-right: -3.4rem;
+  position: relative;
+  padding: 0.6rem;
+  align-items: center; }
 
 .menu-nav__item:nth-child(1) {
   transition-delay: 0.175s; }
@@ -368,7 +384,7 @@
   width: 100vw;
   height: 48px;
   background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px);
-  box-shadow: 0px 1px 4px #c3c3c1, 7px 1px 5px #ced0c5; }
+  box-shadow: 0px 1px 4px #fac5d1, 7px 1px 5px #d70e39; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .nav {
       height: 65px; } }
@@ -552,7 +568,7 @@
     padding: 0.3rem;
     height: 100px;
     position: absolute;
-    top: 20px; } }
+    top: -19px; } }
 
 #baloons2 {
   height: 100%; }
@@ -1299,7 +1315,7 @@ main {
   background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     main {
-      height: 124vh; } }
+      height: 150vh; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     main {
       height: 100vh; } }
@@ -1367,7 +1383,8 @@ footer {
   padding: 0.3rem;
   display: flex;
   align-items: center;
-  background: black; }
+  background: black;
+  z-index: 9999999; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     footer {
       flex-direction: row;
@@ -1386,11 +1403,12 @@ footer {
       padding: 1rem 10rem;
       flex-direction: row;
       justify-content: center;
-      width: 100%; } }
+      width: 100%;
+      height: auto; } }
   footer h2 {
     font-family: "Cinzel Decorative", cursive;
     width: 100%;
-    font-size: 1.15rem;
+    font-size: 0.88rem;
     text-align: center;
     font-weight: normal;
     color: #848267;
@@ -1404,11 +1422,7 @@ footer {
         text-align: center; } }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       footer h2 {
-        font-size: 1.3rem;
-        padding: 0.5rem; } }
-  footer p {
-    text-align: center;
-    padding: 0.3rem; }
+        font-size: 0.88rem; } }
 
 .social-icons {
   display: flex;

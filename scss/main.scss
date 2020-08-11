@@ -117,7 +117,7 @@ main {
   overflow: auto;
   @include Front-page-bcg;
   @include SMALL-LANDSCAPE {
-    height: 124vh;
+    height: 150vh;
   }
   @include MEDIUM-DEVICE-WIDTH {
     height: 100vh;
@@ -197,6 +197,7 @@ footer {
   display: flex;
   align-items: center;
   background: black;
+  z-index: 9999999;
   
   @include SMALL-LANDSCAPE {
     flex-direction: row;
@@ -216,12 +217,13 @@ footer {
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    height: auto;
   }
 
   h2 {
     font-family: "Cinzel Decorative", cursive;
     width: 100%;
-    font-size: 1.15rem;
+    font-size: 0.88rem;
     text-align: center;
     font-weight: normal;
     color: ($GOLD);
@@ -234,13 +236,8 @@ footer {
       text-align: center;
     }
     @include LARGE-DEVICE-WIDTH {
-      font-size: 1.3rem;
-      padding: 0.5rem;
+      font-size: 0.88rem;
     }
-  }
-  p {
-    text-align: center;
-    padding: 0.3rem;
   }
 }
 
