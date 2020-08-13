@@ -12,13 +12,12 @@
   flex-direction: column;
   height: 100%;
   overflow: auto;
-  padding-bottom: 0;
-  background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); }
+  padding-bottom: 0; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .home {
       padding: 28px 5.5%;
       padding-bottom: 0;
-      background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); } }
+      background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 8.2px); } }
   .content-wrapper .home p {
     font-size: 0.98rem;
     background: none; }
@@ -349,8 +348,8 @@
     width: 38%;
     z-index: 999;
     position: fixed;
-    right: 0;
-    margin-top: -1.15rem; }
+    right: 60px;
+    bottom: -24px; }
     @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
       .menu-index #project-index {
         margin-top: -3rem;
@@ -387,11 +386,11 @@
 .nav {
   display: flex;
   position: fixed;
-  top: 0;
+  bottom: 0;
   z-index: 4;
   width: 100vw;
   height: 48px;
-  background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px);
+  background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 8.2px);
   box-shadow: 0px 1px 4px #fac5d1, 7px 1px 5px #d70e39; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .nav {
@@ -409,7 +408,7 @@
     overflow: hidden;
     list-style-type: none;
     padding: 2rem;
-    transform: translateY(-100%);
+    transform: translateY(100%);
     background-color: #3e0d18;
     transition: all 0.42s ease-in-out;
     background: #ffffff; }
@@ -421,17 +420,17 @@
         .nav .menu-nav__item:nth-child(3) {
           height: 80%; } }
     .nav .menu-nav.open {
-      transform: translateY(0);
+      transform: translateY(-100%);
       align-items: flex-end;
       justify-content: space-around;
       border: 2px solid #f2f3eb;
-      flex-direction: column-reverse;
+      flex-direction: column;
       align-items: center;
       padding: 36px;
       padding-top: 51px;
       height: 100vh;
       z-index: 10;
-      background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); }
+      background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 8.2px); }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
         .nav .menu-nav.open {
           flex-direction: row;
@@ -807,14 +806,14 @@
   height: 100%;
   overflow: auto;
   background: #ffffff7d;
-  background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); }
+  background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 8.2px); }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .projects {
       height: 100%;
       overflow: auto;
       padding: 28px 5%;
       padding-bottom: 0;
-      background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); } }
+      background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 8.2px); } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper .projects {
       box-shadow: 2px 4px 17px #d5d6ce;
@@ -1248,7 +1247,8 @@ body {
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
-  background: black; }
+  background: black;
+  background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 8.2px); }
 
 h1,
 h2,
@@ -1320,8 +1320,7 @@ main {
   height: 100%;
   width: 100%;
   overflow: auto;
-  justify-content: space-between;
-  background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); }
+  justify-content: space-between; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     main {
       height: 150vh; } }
@@ -1345,7 +1344,7 @@ main {
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper {
       padding-top: 1rem;
-      background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px);
+      background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 8.2px);
       height: auto; } }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .content-wrapper {
