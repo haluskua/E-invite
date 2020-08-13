@@ -14,7 +14,6 @@
     height: 100%;
     overflow: auto;
     padding-bottom: 0;
-    padding-top: 2rem;
     @include Front-page-bcg;
     @include SMALL-LANDSCAPE {
       padding: 28px 5.5%;
@@ -60,6 +59,7 @@
       }
     }
     &__box-two {
+      margin-top: -6rem;
       padding: 8px;
       padding-top: 2rem;
       width: 100%;
@@ -172,6 +172,7 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+      height: 100%;
       @include LARGE-DEVICE-WIDTH {
         display: flex;
         background: none;
@@ -186,7 +187,7 @@
         // @include shield-bcg;
 
         svg {
-          width: 63%;
+          width: 100%;
           height: auto;
           @include SMALL-LANDSCAPE {
             width: 84%;
@@ -196,6 +197,8 @@
           }
           @include LARGE-DEVICE-WIDTH {
             width: 66%;
+            background: #3e4951;
+            margin: 0 auto;
           }
         }
       }
@@ -236,6 +239,7 @@
         content: "Front-end Developer";
         color: black;
         width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         text-transform: uppercase;
@@ -254,28 +258,23 @@
 }
 
 ///Aside
-.back-slider {
-  @include LARGE-DEVICE-WIDTH {
-    display: flex;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
+
+.left-box,
+.right-box,
+.content-wrapper {
+  // border: 1px solid blue;
+  position: absolute;
+  width: 140px;
+  bottom: 20%;
+
+  .left-svg,
+  .right-svg {
+    width: 30%;
   }
-  .side {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: relative;
-    height: 93%;
-    margin-right: -3.4rem;
-    position: relative;
-    padding: 0.6rem;
-    align-items: center;
-    svg {
-    }
-  }
+}
+
+.top-baloons {
+  margin-top: 2rem;
 }
 
 //Button click transition delay

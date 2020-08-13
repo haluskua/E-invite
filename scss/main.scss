@@ -112,9 +112,10 @@ a {
 // .....................
 main {
   display: flex;
-  height: auto;
+  height: 100%;
   width: 100%;
   overflow: auto;
+  justify-content: space-between;
   @include Front-page-bcg;
   @include SMALL-LANDSCAPE {
     height: 150vh;
@@ -140,8 +141,8 @@ main {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 1% 0 0 0;
   overflow: hidden;
+  width: 100%;
   @include SMALL-LANDSCAPE {
     padding-top: 1rem;
     @include Front-page-bcg;

@@ -13,7 +13,6 @@
   height: 100%;
   overflow: auto;
   padding-bottom: 0;
-  padding-top: 2rem;
   background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper .home {
@@ -47,6 +46,7 @@
       margin: 0 auto;
       padding: 0.3rem 0; }
   .content-wrapper .home__box-two {
+    margin-top: -6rem;
     padding: 8px;
     padding-top: 2rem;
     width: 100%;
@@ -147,7 +147,8 @@
   .content-wrapper .home__box-three {
     display: flex;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    height: 100%; }
     @media only screen and (min-width: 1025px) and (orientation: landscape) {
       .content-wrapper .home__box-three {
         display: flex;
@@ -159,7 +160,7 @@
       display: flex;
       justify-content: center; }
       .content-wrapper .home__box-three .svg-container svg {
-        width: 63%;
+        width: 100%;
         height: auto; }
         @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
           .content-wrapper .home__box-three .svg-container svg {
@@ -169,7 +170,9 @@
             width: 48%; } }
         @media only screen and (min-width: 1025px) and (orientation: landscape) {
           .content-wrapper .home__box-three .svg-container svg {
-            width: 66%; } }
+            width: 66%;
+            background: #3e4951;
+            margin: 0 auto; } }
     .content-wrapper .home__box-three .occ-title {
       color: #292b20;
       font-size: 1.75rem;
@@ -202,6 +205,7 @@
       content: "Front-end Developer";
       color: black;
       width: 100%;
+      height: 100%;
       display: flex;
       justify-content: center;
       text-transform: uppercase;
@@ -213,25 +217,22 @@
       margin: 1rem 0;
       font-size: 1.2rem; }
 
-@media only screen and (min-width: 1025px) and (orientation: landscape) {
-  .back-slider {
-    display: flex;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    left: 0; } }
+.left-box,
+.right-box,
+.content-wrapper {
+  position: absolute;
+  width: 140px;
+  bottom: 20%; }
+  .left-box .left-svg,
+  .left-box .right-svg,
+  .right-box .left-svg,
+  .right-box .right-svg,
+  .content-wrapper .left-svg,
+  .content-wrapper .right-svg {
+    width: 30%; }
 
-.back-slider .side {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: relative;
-  height: 93%;
-  margin-right: -3.4rem;
-  position: relative;
-  padding: 0.6rem;
-  align-items: center; }
+.top-baloons {
+  margin-top: 2rem; }
 
 .menu-nav__item:nth-child(1) {
   transition-delay: 0.175s; }
@@ -1309,9 +1310,10 @@ a {
 
 main {
   display: flex;
-  height: auto;
+  height: 100%;
   width: 100%;
   overflow: auto;
+  justify-content: space-between;
   background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 4px); }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     main {
@@ -1331,8 +1333,8 @@ main {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 1% 0 0 0;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
   @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
     .content-wrapper {
       padding-top: 1rem;
