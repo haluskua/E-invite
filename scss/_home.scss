@@ -59,7 +59,6 @@
       }
     }
     &__box-two {
-      margin-top: -6rem;
       padding: 8px;
       padding-top: 2rem;
       width: 100%;
@@ -116,7 +115,7 @@
         }
       }
       h3::before {
-        content: "Navilli Maladina";
+        content: "Navili Maladina";
         font-size: 1.36rem;
         text-align: left;
         color: #cbfffa;
@@ -275,6 +274,17 @@
 
 .top-baloons {
   margin-top: 2rem;
+}
+
+.time {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  .invited {
+    color: #FFEBEE;
+    font-size: 2.15rem;
+    // margin-bottom: -3.8rem;
+  }
 }
 
 //Button click transition delay
