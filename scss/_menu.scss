@@ -20,13 +20,17 @@
 // ........
 .menu-btn {
   position: relative;
-  width: 120px;
+  width: 205px;
   justify-content: space-between;
   height: 100%;
   margin-top: -7px;
   padding: 12px;
   align-self: center;
-  background: #e6e4cd00;
+  background: #F9FBE7;
+  position: absolute;
+  left: 0;
+  border: 1px solid orange; 
+  border-radius: 3.2rem;
   @include transition-ease;
   z-index: 999;
   display: flex;
@@ -155,12 +159,12 @@
 .nav {
   display: flex;
   position: fixed;
-  bottom: 0;
+  bottom: -100px;
   z-index: 4;
   width: 100vw;
   height: 48px;
-  @include Front-page-bcg;
-  @include box-shadow-nav;
+  // @include Front-page-bcg;
+  // @include box-shadow-nav;
   @include MEDIUM-DEVICE-WIDTH {
     height: 65px;
   }
@@ -168,7 +172,6 @@
   &.open {
     visibility: visible;
     padding: 0px;
-   
   }
 
   .menu-nav {
@@ -196,10 +199,10 @@
     }
 
     &.open {
-      transform: translateY(-100%);
+      transform: translateY(-93%);
       align-items: flex-end;
       justify-content: space-around;
-      border: 2px solid #f2f3eb;
+      border: 2px solid #E91E63;
       flex-direction: column;
       align-items: center;
       padding: 36px;
@@ -396,4 +399,3 @@
 #desktop {
   z-index: 99999999;
 }
-

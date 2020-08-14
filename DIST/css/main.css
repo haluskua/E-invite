@@ -235,6 +235,7 @@
 .time {
   display: flex;
   width: 100%;
+  margin-top: 2rem;
   justify-content: center; }
   .time .invited {
     color: #FFEBEE;
@@ -265,13 +266,17 @@
 
 .menu-btn {
   position: relative;
-  width: 120px;
+  width: 205px;
   justify-content: space-between;
   height: 100%;
   margin-top: -7px;
   padding: 12px;
   align-self: center;
-  background: #e6e4cd00;
+  background: #F9FBE7;
+  position: absolute;
+  left: 0;
+  border: 1px solid orange;
+  border-radius: 3.2rem;
   transition: all 0.42s ease-in-out;
   z-index: 999;
   display: flex;
@@ -386,12 +391,10 @@
 .nav {
   display: flex;
   position: fixed;
-  bottom: 0;
+  bottom: -100px;
   z-index: 4;
   width: 100vw;
-  height: 48px;
-  background: repeating-linear-gradient(80deg, #1a1717, #0f0f0dfa 8.2px);
-  box-shadow: 0px 1px 4px #fac5d1, 7px 1px 5px #d70e39; }
+  height: 48px; }
   @media only screen and (min-width: 640px) and (orientation: portrait) {
     .nav {
       height: 65px; } }
@@ -420,10 +423,10 @@
         .nav .menu-nav__item:nth-child(3) {
           height: 80%; } }
     .nav .menu-nav.open {
-      transform: translateY(-100%);
+      transform: translateY(-93%);
       align-items: flex-end;
       justify-content: space-around;
-      border: 2px solid #f2f3eb;
+      border: 2px solid #E91E63;
       flex-direction: column;
       align-items: center;
       padding: 36px;
