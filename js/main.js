@@ -1,7 +1,3 @@
-
-
-
-
 const menuBtn = document.querySelector(".menu-btn");
 const hamburger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
@@ -14,10 +10,20 @@ const leftShield = document.querySelector("#leftBTN");
 const bottomShield = document.querySelector("#bottomBTN");
 const rightShield = document.querySelector("#rightBTN");
 
+// const mailchimpBtn = document.querySelector("#mchimp_email");
+
 let shield = false;
 
 let showMenu = false;
 
+//email
+// document.addEventListener("DOMContentLoaded", function () {
+//   mailchimpBtn.addEventListener("click", emailBlock);
+
+//   function emailBlock(e) {
+//     alert("Hello");
+//   }
+// });
 
 // toggleMenu Hamburger menu
 
@@ -42,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-
 
 ///////////////////////////////////
 
@@ -92,9 +97,7 @@ function imgClick(e) {
   e.target.style.opacity = opacity;
 }
 
-
 // ---------------------------*****************-------------------------
-
 
 // READMORE script
 
@@ -129,23 +132,17 @@ $(document).ready(function () {
   });
 });
 
-
-
 /////////////////////////////////////////
 /// from lux library,, updating code on resize of window-size
 
-window.addEventListener("resize", function() {
-	lax.updateElements()
+window.addEventListener("resize", function () {
+  lax.updateElements();
 });
 
 ///// from lax library, break-points
 
 lax.setup({
-  breakpoints: { small: 0, large: 992 }
-})
-
-
+  breakpoints: { small: 0, large: 992 },
+});
 
 ////////////////
-
-

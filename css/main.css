@@ -265,6 +265,7 @@
 .left-box,
 .right-box,
 .content-wrapper {
+  border: 1px solid blue;
   position: absolute;
   width: 140px;
   bottom: 20%; }
@@ -289,8 +290,18 @@
       -ms-flex-pack: center;
           justify-content: center; }
   .time .invited {
-    color: #FFEBEE;
+    color: #ffebee;
     font-size: 2.15rem; }
+
+#mchimp_email {
+  color: red;
+  font-size: 2rem;
+  border: 1px solid blue;
+  padding: 1rem;
+  width: 100px;
+  line-height: 1.7rem;
+  position: absolute;
+  left: 30%; }
 
 .menu-nav__item:nth-child(1) {
   -webkit-transition-delay: 0.175s;
@@ -1845,4 +1856,5 @@ footer {
   @media only screen and (min-width: 1025px) and (orientation: landscape) {
     .fa-2x {
       font-size: 1.2rem; } }
+
 /*# sourceMappingURL=main.css.map */
