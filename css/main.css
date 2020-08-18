@@ -479,7 +479,7 @@
     font-size: 1.59em;
     font-weight: normal;
     line-height: 1em;
-    color: #2a2b24;
+    color: #fcd8e1;
     letter-spacing: 0em;
     text-shadow: none;
     text-align: center;
@@ -535,7 +535,7 @@
       font-size: 1.3rem;
       font-family: "Cormorant Unicase", serif;
       padding: 0;
-      color: #2a2b24; }
+      color: #fcd8e1; }
       @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
         .nav .title_txt_container .title_text {
           font-size: 1.15em;
@@ -1114,7 +1114,7 @@
       z-index: 999;
       font-family: "Roboto", "Montserrat", cursive; }
     .content-wrapper .contact__list .text-secondary {
-      color: #2a2b24;
+      color: #fcd8e1;
       margin: 3px 0;
       font-size: 0.9rem;
       margin-top: 8px; }
@@ -1134,120 +1134,6 @@
 @media only screen and (min-width: 640px) and (orientation: portrait) {
   .content-wrapper footer h2 {
     text-align: center !important !important; } }
-
-:root {
-  /* Set fade in duration */
-  --fade-time: 0.5s; }
-
-@media only screen and (min-width: 640px) and (orientation: portrait) {
-  main {
-    height: auto !important; } }
-
-.content-wrapper {
-  /* Fade in animation */ }
-  .content-wrapper .main-container {
-    padding-top: 10rem;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 0.25rem;
-    padding-bottom: 0;
-    overflow: auto; }
-    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-      .content-wrapper .main-container {
-        box-shadow: none;
-        padding: 16px 10% 0 16%; } }
-    @media only screen and (min-width: 1024px) and (orientation: landscape) {
-      .content-wrapper .main-container {
-        padding: 2%; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .main-container {
-        margin: 0 auto;
-        height: auto;
-        overflow: auto;
-        padding: 2%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto; } }
-  .content-wrapper .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: auto;
-    overflow: scroll;
-    background: #ffffff;
-    box-shadow: 2px 4px 17px #d5d6ce; }
-    @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-      .content-wrapper .container {
-        border: none;
-        box-shadow: none;
-        padding: 1rem;
-        padding: 1rem;
-        background: #ffffff;
-        box-shadow: 2px 4px 17px #d5d6ce; } }
-    @media only screen and (min-width: 640px) and (orientation: portrait) {
-      .content-wrapper .container {
-        height: 100%; } }
-    @media only screen and (min-width: 1024px) and (orientation: landscape) {
-      .content-wrapper .container {
-        max-width: 90%; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding-top: 2%;
-        flex-wrap: wrap;
-        overflow: hidden; } }
-  .content-wrapper .main-img {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    padding-top: 44px;
-    box-shadow: 2px 4px 17px #d5d6ce; }
-    @media only screen and (min-width: 640px) and (orientation: portrait) {
-      .content-wrapper .main-img {
-        padding: 0; } }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .main-img {
-        width: 55%;
-        padding-top: 0; } }
-  .content-wrapper .main-img img,
-  .content-wrapper .imgs img {
-    width: 100%; }
-  @media only screen and (device-width: 1rem), screen and (orientation: landscape) {
-    .content-wrapper .main-img img {
-      width: 79%; } }
-  @media only screen and (min-width: 1025px) and (orientation: landscape) {
-    .content-wrapper .main-img img {
-      padding: 2%;
-      width: 100%; } }
-  .content-wrapper .imgs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-    padding-bottom: 12px;
-    padding-top: 16px;
-    padding: 6% 1%;
-    background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 5px), url(../img/light_grafix_portrait2.jpg) center bottom;
-    background-size: cover; }
-    @media only screen and (min-width: 1025px) and (orientation: landscape) {
-      .content-wrapper .imgs {
-        width: 33%; } }
-  .content-wrapper .imgs img {
-    cursor: pointer; }
-
-@keyframes fadeIn {
-  to {
-    opacity: 1; } }
-  .content-wrapper .fade-in {
-    opacity: 0;
-    animation: fadeIn var(--fade-time) ease-in 1 forwards; }
 
 * {
   box-sizing: border-box;
